@@ -1,3 +1,27 @@
 {
-  "extends": "@rocketseat/eslint-config/react"
+  "extends": "@rocketseat/eslint-config/react",
+  "plugins": ["eslint-plugin-import-helpers"],
+  "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react/", "/^react-native/", "/^expo/"],
+          "module",
+          "absolute",
+          "/^@app/",
+          "/^@components/",
+          "/^@constants/",
+          "/^@hooks/",
+          "/^@services/",
+          "/^@utils/",
+          "/^@assets/",
+          "/^@styles/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
+  }
 }
