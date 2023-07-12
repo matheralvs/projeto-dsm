@@ -1,13 +1,16 @@
+import { ReactNode } from 'react'
+
 import { Image, Stack } from 'native-base'
 
 import { screenWidth } from '@constants/screenDimensions'
 
 import bgHero from '@assets/bgHero.png'
-import DsmLogo from '@assets/dsmLogo.svg'
 
-import { SearchField } from './SearchField'
+type HeaderProps = {
+  children: ReactNode
+}
 
-export function Header() {
+export function HeaderRoot({ children }: HeaderProps) {
   return (
     <Stack
       width={screenWidth}
@@ -16,6 +19,7 @@ export function Header() {
       justifyContent="center"
       borderBottomWidth={4}
       borderBottomColor="orange.400"
+      position="relative"
     >
       <Image
         source={bgHero}
@@ -24,12 +28,7 @@ export function Header() {
         resizeMode="cover"
         alt="DSM Logo"
       />
-      <DsmLogo
-        style={{
-          position: 'absolute',
-        }}
-      />
-      <SearchField />
+      {children}
     </Stack>
   )
 }
