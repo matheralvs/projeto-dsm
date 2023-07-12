@@ -11,5 +11,6 @@ export const defaultTheme = extendTheme({
   },
   sizes: {
     14: 56,
+    '8xl': 160,
   },
 })
