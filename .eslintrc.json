@@ -10,6 +10,7 @@
           ["/^react/", "/^react-native/", "/^expo/"],
           "module",
           "absolute",
+          "/^native-base/",
           "/^@app/",
           "/^@components/",
           "/^@constants/",
