@@ -6,10 +6,10 @@ import {
   Inter_400Regular as Inter400Regular,
   Inter_700Bold as Inter700Bold,
 } from '@expo-google-fonts/inter'
+
 import { Box, NativeBaseProvider } from 'native-base'
 
-import { Empty } from '@components/Empty'
-import { Header } from '@components/Header'
+import { Header, Empty } from '@components'
 
 import { defaultTheme } from '@styles/theme'
 
@@ -26,7 +26,10 @@ export default function RootLayout() {
   return (
     <NativeBaseProvider theme={defaultTheme}>
       <StatusBar style="light" translucent />
-      <Header />
+      <Header.Root>
+        <Header.Logo />
+        <Header.Search />
+      </Header.Root>
       <Box flex={1} mt={12}>
         {/* <Empty /> */}
         <Slot />
