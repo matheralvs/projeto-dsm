@@ -15,6 +15,7 @@
           "/^@components/",
           "/^@constants/",
           "/^@hooks/",
+          "/^@store/",
           "/^@services/",
           "/^@utils/",
           "/^@assets/",

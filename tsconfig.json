@@ -6,9 +6,13 @@
     "paths": {
       "@app/*": ["./src/app/*"],
       "@components": ["./src/components/index"],
+      "@components/*": ["./src/components/*"],
       "@constants/*": ["./src/constants/*"],
       "@assets/*": ["./src/assets/*"],
-      "@styles/*": ["./src/styles/*"]
+      "@services/*": ["./src/services/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@store": ["./src/store/index"],
+      "@store/*": ["./src/store/*"]
     }
   }
 }
