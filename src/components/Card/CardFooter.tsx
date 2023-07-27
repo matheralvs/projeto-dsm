@@ -2,7 +2,12 @@ import Feather from '@expo/vector-icons/Feather'
 
 import { HStack, Divider, Icon, Link, Text } from 'native-base'
 
-export function CardFooter() {
+type CardFooterProps = {
+  noticeAuthor: string
+  noticeURL: string
+}
+
+export function CardFooter({ noticeAuthor, noticeURL }: CardFooterProps) {
   return (
     <HStack
       bg="orange.100"
@@ -15,14 +20,14 @@ export function CardFooter() {
       <HStack space={2} alignItems="center">
         <Icon as={Feather} name="user" size="md" color="orange.400" />
         <Text fontSize="sm" textTransform="capitalize" color="orange.400">
-          dwwoelfel
+          {noticeAuthor}
         </Text>
       </HStack>
 
       <HStack space={2} alignItems="center">
         <Icon as={Feather} name="external-link" size="md" color="orange.400" />
         <Link
-          href="https://code.facebook.com/posts/300798627056246"
+          href={noticeURL}
           _text={{
             color: 'orange.400',
           }}
