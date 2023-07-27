@@ -37,7 +37,7 @@ O layout da aplicação no Figma se encontra nesse [link](https://www.figma.com/
 
 ## 📱 Demonstração
 
-[[DSMRead]](https://github.com/matheralvs/projeto-dsm/assets/109676973/a8574fb9-8aef-427c-ba18-8cd5d9a4fcfc)
+https://github.com/matheralvs/projeto-dsm/assets/109676973/d241c33d-432d-48da-a95d-582ddde3ee72
 
 ## 🚀 Tecnologias
 
