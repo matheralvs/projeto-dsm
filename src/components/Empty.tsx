@@ -1,4 +1,5 @@
 import Feather from '@expo/vector-icons/Feather'
+
 import { Icon, Text, VStack } from 'native-base'
 
 export function Empty() {
@@ -10,8 +11,8 @@ export function Empty() {
         <Text fontSize="md" fontFamily="heading" color="gray.500">
           Ops! Não temos nada por aqui.
         </Text>
-        <Text fontSize="md" color="gray.500">
-          Pesquise agora mesmo um livro e se divirta!
+        <Text fontSize="md" color="gray.500" maxW={56} textAlign="center">
+          Pesquise agora mesmo uma notícia e se divirta!
         </Text>
       </VStack>
     </VStack>
