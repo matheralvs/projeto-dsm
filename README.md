@@ -24,7 +24,9 @@
 <p align="center">
 <a href="#-sobre-o-projeto">Sobre o projeto</a> •
 <a href="#-tecnologias">Tecnologias</a> •
-<a href="#-como-começar">Como começar</a> •
+<a href="#-layout-da-aplicação">Layout da aplicação</a> •
+<a href="#-demonstração">Demonstração</a> •
+<a href="#-como-começar">Como começar</a>
 </p>
 
 ## ✅ Sobre o projeto
